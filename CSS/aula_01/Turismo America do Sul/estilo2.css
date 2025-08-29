@@ -1,0 +1,46 @@
+/* Fundo e texto */
+body {
+  background-color: #ffe6f2; /* rosa clarinho */
+  font-family: Arial, sans-serif;
+  color: #4a004a; /* roxo escuro para contraste */
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #ffb6c1; /* rosa médio */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Linha divisória */
+hr {
+  border: none;
+  height: 3px;
+  background-color: pink;
+}
+
+/* Texto principal */
+main p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Imagens */
+figure {
+  text-align: center;
+  margin: 20px;
+}
+
+figure img {
+  width: 220px;  /* todas as imagens com mesmo tamanho */
+  height: 150px; /* altura fixa */
+  object-fit: cover; /* corta proporcionalmente para não distorcer */
+  border: 2px solid #800040; /* borda roxa */
+  border-radius: 8px;
+}

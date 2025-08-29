@@ -1,0 +1,87 @@
+/* --- Estilo do corpo da página --- */
+body {
+    background-color: #ffe6f2; /* fundo rosa clarinho */
+    font-family: Arial, sans-serif;
+    color: #4a004a; /* texto roxo escuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Cabeçalho --- */
+header {
+    background-color: #ffb6c1; /* rosa médio */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* --- Artigos e textos --- */
+main article {
+    text-align: center;
+    margin: 20px;
+}
+
+main article h2 {
+    color: #800040; /* roxo escuro para subtítulos */
+}
+
+/* --- Parágrafos --- */
+main p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* --- Listas --- */
+ul {
+    list-style-type: square; /* quadradinhos */
+    display: inline-block; /* centraliza a lista com text-align:center no artigo */
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* --- Linha divisória --- */
+hr {
+    border: none;
+    height: 3px;
+    background-color: pink;
+    width: 60%;
+    margin: 30px auto;
+}
+
+/* --- Imagens --- */
+figure {
+    text-align: center;
+    margin: 20px auto;
+}
+
+figure img {
+    width: 600px; /* mantém mesmo tamanho da imagem original */
+    height: 337px; /* proporcional a 16:9 */
+    object-fit: cover;
+    border: 2px solid #800040;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* --- Botões de navegação --- */
+div a button {
+    background-color: #ffb6c1;
+    color: #4a004a;
+    border: 2px solid #800040;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+div a button:hover {
+    background-color: #ff99c2; /* efeito ao passar o mouse */
+}
