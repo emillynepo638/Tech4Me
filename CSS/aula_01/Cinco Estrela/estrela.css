@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+th {
+    background-color: #666;
+    color: white;
+}
+
+td.nota {
+    background-color: green;
+}
+
+.estrela {
+    font-size: 24px;
+    color: white; /* estrela apagada */
+    margin: 0 2px;
+}
+
+.estrela.acesa {
+    color: yellow; /* estrela acesa */
+}
