@@ -1,0 +1,45 @@
+/* Estilo geral */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Estilo da tabela */
+table {
+  border-collapse: collapse;
+  background: #f5f5f5;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Título */
+caption {
+  background: #1d5d86;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Cabeçalho */
+thead th {
+  background: #5e9ec2;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+/* Linhas da tabela */
+tbody td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+/* Coluna de posição */
+.pos {
+  background-color: #d9d3cf;
+  font-weight: bold;
+}

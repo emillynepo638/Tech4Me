@@ -1,0 +1,13 @@
+/* body {
+ background-image: url(https://m.media-amazon.com/images/S/pv-target-images/76e8b9365cfe00a9c9c0e3e31415eb928631e42b73cab44e4d17a607cda84e0f.jpg);
+ background-size: 50%;
+} */
+
+#grad1 {
+    height: 300px;
+    background-image: linear-gradient(red, rgb(199, 19, 160));
+}
+
+.anonovo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

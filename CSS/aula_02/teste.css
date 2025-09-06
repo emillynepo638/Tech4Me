@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Lista não ordenada */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li::marker {
+  color: blue; /* cor do marcador */
+  font-size: 1.2em; /* tamanho do marcador */
+}
+
+/* Lista ordenada */
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+ol li::marker {
+  color: red; /* cor do número */
+  font-weight: bold;
+  background: yellow; /* fundo do número */
+  padding: 2px 5px;
+  border-radius: 4px;
+}
