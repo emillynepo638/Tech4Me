@@ -1,0 +1,62 @@
+/* reset mínimo */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* página centralizada */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #f3f6f8;
+  padding: 2rem;
+}
+
+/* título opcional */
+h1 {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: #333;
+  opacity: 0.9;
+}
+
+/* recipiente quadrado do arco-íris */
+.rainbow {
+  /* controla o tamanho do quadrado (troque max-width se quiser maior/menor) */
+  width: min(90vw, 540px);
+  aspect-ratio: 1 / 1;     /* garante um quadrado responsivo */
+  display: flex;           /* coloca as faixas lado a lado */
+  border-radius: 8px;      /* cantos levemente arredondados (opcional) */
+  overflow: hidden;        /* corta qualquer transbordo */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* cada faixa ocupa 1/7 da largura do recipiente */
+.rainbow .stripe {
+  flex: 0 0 calc(100% / 7); /* base fixa = 100%/7 */
+  height: 100%;
+}
+
+/* cores (de cima para baixo: vermelho -> violeta) */
+.rainbow .red    { background: #e53935; }  /* vermelho */
+.rainbow .orange { background: #fb8c00; }  /* laranja */
+.rainbow .yellow { background: #fdd835; }  /* amarelo */
+.rainbow .green  { background: #43a047; }  /* verde */
+.rainbow .blue   { background: #1e88e5; }  /* azul */
+.rainbow .indigo { background: #5e35b1; }  /* anil/índigo */
+.rainbow .violet { background: #8e24aa; }  /* violeta */
+
+/* acessibilidade visual: foco para quem navega com teclado */
+.rainbow .stripe:focus {
+  outline: 3px dashed rgba(0,0,0,0.15);
+  outline-offset: -3px;
+}
+
+/* responsividade extra: em telas muito estreitas reduzir o tamanho do título */
+@media (max-width: 420px) {
+  h1 { font-size: 0.85rem; top: 10px; }
+}
