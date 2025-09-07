@@ -7,12 +7,54 @@ body {
   color: #eee;
   font-family: sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: start;
+  flex-direction: column; /* Agora os itens ficam em coluna */
+  justify-content: flex-start;
+  align-items: center;
   min-height: 100vh;
   padding: 2rem;
 }
 
+/* Título estilo cinema */
+.titulo-cinema {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.titulo-cinema h1 {
+  font-size: 3rem;
+  color: #ffea00;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 1rem 2rem;
+  border: 6px dotted #ffea00;
+  display: inline-block;
+  background: #222;
+  border-radius: 12px;
+  
+  /* Animação piscante */
+  animation: piscar 1.5s infinite alternate;
+}
+
+/* Efeito pisca-pisca neon */
+@keyframes piscar {
+  0% {
+    box-shadow: 0 0 5px #ffea00, 0 0 15px #ffea00, 0 0 30px #ffea00;
+    border-color: #ffea00;
+    color: #ffea00;
+  }
+  50% {
+    box-shadow: 0 0 5px #ff00e6, 0 0 15px #ff00e6, 0 0 30px #ff00e6;
+    border-color: #ff00e6;
+    color: #ff00e6;
+  }
+  100% {
+    box-shadow: 0 0 5px #00eaff, 0 0 15px #00eaff, 0 0 30px #00eaff;
+    border-color: #00eaff;
+    color: #00eaff;
+  }
+}
+
+/* Galeria de pôsteres */
 .poster-gallery {
   display: flex;
   gap: 2rem;
@@ -28,12 +70,11 @@ body {
 .poster img {
   width: 100%;
   display: block;
-  padding: 10px; /* Espaço interno entre imagem e borda */
-  border: 4px dotted #ffea00; /* Borda pontilhada amarela simulando luzes */
-  margin-bottom: 0.5rem; /* Espaço entre imagem e legenda */
+  padding: 10px;
+  border: 4px dotted #ffea00;
+  margin-bottom: 0.5rem;
 }
 
-/* Efeito de foco/hover visual */
 .poster img:hover {
   box-shadow: 0 0 8px 2px rgba(255, 234, 0, 0.8);
   transition: box-shadow 0.3s;
