@@ -1,0 +1,48 @@
+/* Layout básico */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: rgb(255, 255, 255);
+  padding: 2rem;
+}
+
+/* Caixa central */
+.hand-wrapper {
+  width: 260px;          /* tamanho do spinner na tela */
+  height: 260px;
+  display: grid;
+  place-items: center;
+  perspective: 800px;    /* dá sensação de profundidade se quisermos rotacionar em 3D */
+}
+
+/* A imagem do spinner:
+   - transform-origin central para girar corretamente
+   - display block para remover espaços indesejados */
+#spinner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transform-origin: 50% 50%;
+  animation: spin-infinite 0.4s linear infinite;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* animação infinita simples */
+@keyframes spin-infinite {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Texto de apoio */
+.hint {
+  text-align: center;
+  margin-top: 1rem;
+  color: #345;
+  opacity: .85;
+}
