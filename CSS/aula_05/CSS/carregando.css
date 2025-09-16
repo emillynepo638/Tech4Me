@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+/* Loader */
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 8px solid #ddd;          /* borda cinza clara */
+  border-top: 8px solid #3498db;   /* borda colorida */
+  border-radius: 50%;              /* formato circular */
+  animation: spin 1.2s linear infinite, colorchange 4s ease-in-out infinite;
+}
+
+/* Animação de rotação */
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Animação de troca de cores */
+@keyframes colorchange {
+  0%   { border-top-color: #3498db; }
+  25%  { border-top-color: #e74c3c; }
+  50%  { border-top-color: #f1c40f; }
+  75%  { border-top-color: #2ecc71; }
+  100% { border-top-color: #3498db; }
+}
