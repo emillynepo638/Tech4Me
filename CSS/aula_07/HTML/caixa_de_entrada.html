@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caixa de Entrada</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f6fb;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+    li {
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+    }
+    li:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Estilo no desktop: formato de tabela */
+    @media (min-width: 701px) {
+      li {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: center;
+      }
+      .assunto { font-weight: bold; color: #1a73e8; }
+      .remetente { text-align: left; }
+      .data { text-align: right; color: #555; }
+    }
+
+    /* Estilo no celular: duas linhas */
+    @media (max-width: 700px) {
+      li {
+        display: block;
+      }
+      .assunto {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #1a73e8;
+      }
+      .linha2 {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 14px;
+        color: #555;
+        gap: 10px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>Caixa de Entrada</h1>
+  <ul>
+    <li>
+      <div class="assunto">Convite: Workshop de Acessibilidade</div>
+      <div class="remetente">Equipe Eventos</div>
+      <div class="data">24/09/2025</div>
+      <div class="linha2">
+        <span>Equipe Eventos</span>
+        <span>24/09/2025</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="assunto">Fatura disponível</div>
+      <div class="remetente">Financeiro</div>
+      <div class="data">22/09/2025</div>
+      <div class="linha2">
+        <span>Financeiro</span>
+        <span>22/09/2025</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="assunto">Boas-vindas à equipe</div>
+      <div class="remetente">RH</div>
+      <div class="data">18/09/2025</div>
+      <div class="linha2">
+        <span>RH</span>
+        <span>18/09/2025</span>
+      </div>
+    </li>
+    
+  </ul>
+</body>
+</html>

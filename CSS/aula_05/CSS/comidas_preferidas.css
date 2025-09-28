@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Bloco com informações */
+.info {
+  margin-bottom: 30px;
+}
+.info p {
+  margin: 5px 0;
+}
+
+/* Container do gráfico */
+.grafico {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nome {
+  width: 100px;
+  font-weight: bold;
+}
+
+.barra-container {
+  flex: 1;
+  background: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.barra {
+  height: 25px;
+  border-radius: 8px;
+  width: 0; /* começa zerado */
+  animation: carregar 2s ease forwards;
+}
+
+/* Diferentes cores para cada prato */
+.strogonoff { background: linear-gradient(90deg, #ff6a00, #ffb347); }
+.lasanha    { background: linear-gradient(90deg, #e63946, #ff9f1c); }
+.churrasco  { background: linear-gradient(90deg, #06d6a0, #118ab2); }
+.empadao    { background: linear-gradient(90deg, #9b5de5, #f15bb5); }
+.jilo       { background: linear-gradient(90deg, #6a994e, #a7c957); }
+
+/* Animação de carregamento */
+@keyframes carregar {
+  from { width: 0; }
+  to { width: var(--largura); }
+}

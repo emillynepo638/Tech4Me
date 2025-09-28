@@ -1,0 +1,11 @@
+/* Esconde por padrão (mobile-first) */
+.desktop-only {
+  display: none;
+}
+
+/* Quando a tela for maior ou igual a 1024px (desktop), mostra */
+@media (min-width: 1024px) {
+  .desktop-only {
+    display: block;
+  }
+}

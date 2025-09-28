@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lançamento Barbie - O Segredo das Fadas</title>
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0e9e64d.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* Cores personalizadas */
+    .is-barbie {
+      background-color: #ff69b4 !important; /* rosa choque */
+      color: white;
+    }
+    .hero.is-barbie {
+      background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+      color: white;
+    }
+    .button.is-barbie {
+      background-color: #ff69b4;
+      border: none;
+      color: white;
+    }
+    .button.is-barbie:hover {
+      background-color: #ff1493; /* rosa mais forte */
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-barbie">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-white" href="#">
+        <strong>Barbie ✨</strong>
+      </a>
+      <a role="button" class="navbar-burger" data-target="menu" aria-label="menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </a>
+    </div>
+    <div id="menu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item has-text-white">Home</a>
+        <a class="navbar-item has-text-white">Evento</a>
+        <a class="navbar-item has-text-white">Inscrição</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero is-barbie is-fullheight-with-navbar">
+    <div class="hero-body has-text-centered">
+      <div class="container">
+        <h1 class="title is-1">Lançamento Barbie: O Segredo das Fadas</h1>
+        <h2 class="subtitle">Um evento mágico cheio de encanto 💖</h2>
+        <a class="button is-barbie is-large">Inscreva-se agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informações -->
+  <section class="section">
+    <div class="columns has-text-centered">
+      <div class="column">
+        <i class="fas fa-calendar fa-2x"></i>
+        <p><strong>20/10/2025 - 19h</strong></p>
+      </div>
+      <div class="column">
+        <i class="fas fa-map-marker-alt fa-2x"></i>
+        <p><strong>Cinema Teresópolis - RJ</strong></p>
+      </div>
+      <div class="column">
+        <i class="fas fa-ticket-alt fa-2x"></i>
+        <p><strong>Entrada Gratuita</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário simples -->
+  <section class="section has-background-light">
+    <div class="container">
+      <h2 class="title has-text-centered">Inscreva-se</h2>
+      <form>
+        <div class="field">
+          <input class="input" type="text" placeholder="Nome" required>
+        </div>
+        <div class="field">
+          <input class="input" type="email" placeholder="E-mail" required>
+        </div>
+        <div class="field">
+          <button class="button is-barbie is-fullwidth">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer is-barbie has-text-centered">
+    <p>&copy; 2025 Barbie - O Segredo das Fadas 💕</p>
+    <p>
+      <a class="icon has-text-white" href="#"><i class="fab fa-facebook"></i></a>
+      <a class="icon has-text-white" href="#"><i class="fab fa-instagram"></i></a>
+    </p>
+  </footer>
+
+  <!-- Script do burger -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burgers = document.querySelectorAll('.navbar-burger');
+      burgers.forEach(burger => {
+        burger.addEventListener('click', () => {
+          const target = document.getElementById(burger.dataset.target);
+          burger.classList.toggle('is-active');
+          target.classList.toggle('is-active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
