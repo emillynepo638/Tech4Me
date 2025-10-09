@@ -1,0 +1,31 @@
+== igualdade
+0 == 0 -> True
+
+Para analisar o valor e o tipo de dados adicionamos mais um sinal de =
+"0" == 0 -> True
+"0" === 0 -> False
+
+**********************************
+
+!= diferente
+0 != 0 -> False
+
+Para analisar o valor e o tipo de dados adicionamos mais um sinal de =
+"0" != 0 -> False
+"0" !== "1" -> false
+
+**********************************
+
+> maior
+1 > 2 -> False
+
+< menor
+1 < 2 -> True
+
+>= maior ou igual
+1 >= 2 -> False
+2 >= 2 -> True
+
+<= menor ou igual
+1 <= 2 -> True
+2 <= 2 - True
