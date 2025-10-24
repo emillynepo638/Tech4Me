@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios JS</title>
+</head>
+<body>
+    <h1>Exercícios JavaScript</h1>
+
+    <!-- 1 - Maior número -->
+    <button onclick="ex1()">1 - Maior número</button><br><br>
+
+    <!-- 2 - Aprovado ou Reprovado -->
+    <button onclick="ex2()">2 - Aprovado ou Reprovado</button><br><br>
+
+    <!-- 3 - Par ou Ímpar -->
+    <button onclick="ex3()">3 - Par ou Ímpar</button><br><br>
+
+    <!-- 4 - Dobro de um número -->
+    <button onclick="ex4()">4 - Dobro de um número</button><br><br>
+
+    <!-- 4b - Maior de três números -->
+    <button onclick="ex4b()">4b - Maior de três números</button><br><br>
+
+    <!-- 5 - Verificador de idade -->
+    <button onclick="ex5()">5 - Verificador de idade</button><br><br>
+
+    <!-- 6 - Calculadora simples -->
+    <button onclick="ex6()">6 - Calculadora simples</button><br><br>
+
+    <!-- 7 - Classificação de triângulo -->
+    <button onclick="ex7()">7 - Classificação de triângulo</button><br><br>
+
+    <!-- 8 - Cálculo de IMC -->
+    <button onclick="ex8()">8 - Cálculo de IMC</button><br><br>
+
+    <!-- 9 - Sistema de login simples -->
+    <button onclick="ex9()">9 - Login</button><br><br>
+
+    <script>
+        // 1 - Maior número
+        function maior(a, b) {
+            if(a > b){
+                alert(a + " é maior que " + b);
+            } else if (b > a){
+                alert(b + " é maior que " + a);
+            } else {
+                alert("Os números são iguais");
+            }
+        }
+
+        function ex1() {
+            var a = parseFloat(prompt("Digite o primeiro número:"));
+            var b = parseFloat(prompt("Digite o segundo número:"));
+            maior(a, b);
+        }
+
+        // 2 - Aprovado ou Reprovado
+        function verificarMedia(nota1, nota2) {
+            var media = (nota1 + nota2) / 2;
+            if(media >= 6){
+                alert("Aprovado");
+            } else {
+                alert("Reprovado");
+            }
+        }
+
+        function ex2() {
+            var n1 = parseFloat(prompt("Digite a primeira nota:"));
+            var n2 = parseFloat(prompt("Digite a segunda nota:"));
+            verificarMedia(n1, n2);
+        }
+
+        // 3 - Par ou Ímpar
+        function parOuImpar(numero) {
+            if(numero % 2 === 0){
+                alert(numero + " é par");
+            } else {
+                alert(numero + " é ímpar");
+            }
+        }
+
+        function ex3() {
+            var num = parseInt(prompt("Digite um número:"));
+            parOuImpar(num);
+        }
+
+        // 4 - Dobro de um número
+        function dobro(n) {
+            return n * 2;
+        }
+
+        function ex4() {
+            var num = parseFloat(prompt("Digite um número:"));
+            alert("O dobro de " + num + " é " + dobro(num));
+        }
+
+        // 4b - Maior de três números
+        function maior3(a, b, c) {
+            if(a >= b && a >= c){
+                return a;
+            } else if(b >= a && b >= c){
+                return b;
+            } else {
+                return c;
+            }
+        }
+
+        function ex4b() {
+            var a = parseFloat(prompt("Digite o primeiro número:"));
+            var b = parseFloat(prompt("Digite o segundo número:"));
+            var c = parseFloat(prompt("Digite o terceiro número:"));
+            alert("O maior número é: " + maior3(a, b, c));
+        }
+
+        // 5 - Verificador de idade
+        function verifica_idade(idade) {
+            if(idade < 18){
+                return "Menor de idade";
+            } else if(idade >= 18 && idade < 60){
+                return "Adulto";
+            } else {
+                return "Idoso";
+            }
+        }
+
+        function ex5() {
+            var idade = parseInt(prompt("Digite sua idade:"));
+            alert(verifica_idade(idade));
+        }
+
+        // 6 - Calculadora simples
+        function calculadora(a, b, operacao) {
+            switch(operacao){
+                case '+':
+                    return a + b;
+                case '-':
+                    return a - b;
+                case '*':
+                    return a * b;
+                case '/':
+                    if(b !== 0){
+                        return a / b;
+                    } else {
+                        return "Erro: Divisão por zero";
+                    }
+                default:
+                    return "Operação inválida";
+            }
+        }
+
+        function ex6() {
+            var a = parseFloat(prompt("Digite o primeiro número:"));
+            var b = parseFloat(prompt("Digite o segundo número:"));
+            var op = prompt("Digite a operação (+, -, *, /):");
+            alert("Resultado: " + calculadora(a, b, op));
+        }
+
+        // 7 - Classificação de triângulo
+        function tipo_triangulo(a, b, c) {
+            if(a + b > c && a + c > b && b + c > a){
+                if(a === b && b === c){
+                    return "Equilátero";
+                } else if(a === b || a === c || b === c){
+                    return "Isósceles";
+                } else {
+                    return "Escaleno";
+                }
+            } else {
+                return "Não é triângulo";
+            }
+        }
+
+        function ex7() {
+            var a = parseFloat(prompt("Digite o lado A:"));
+            var b = parseFloat(prompt("Digite o lado B:"));
+            var c = parseFloat(prompt("Digite o lado C:"));
+            alert(tipo_triangulo(a, b, c));
+        }
+
+        // 8 - Cálculo de IMC
+        function calcula_imc(peso, altura) {
+            var imc = peso / (altura * altura);
+            var classificacao = "";
+            if(imc < 18.5){
+                classificacao = "Abaixo do peso";
+            } else if(imc < 25){
+                classificacao = "Peso normal";
+            } else if(imc < 30){
+                classificacao = "Sobrepeso";
+            } else {
+                classificacao = "Obesidade";
+            }
+            return "IMC: " + imc.toFixed(2) + " - " + classificacao;
+        }
+
+        function ex8() {
+            var peso = parseFloat(prompt("Digite seu peso (kg):"));
+            var altura = parseFloat(prompt("Digite sua altura (m):"));
+            alert(calcula_imc(peso, altura));
+        }
+
+        // 9 - Sistema de login simples
+        function login(usuario, senha) {
+            var usuarioCorreto = "admin";
+            var senhaCorreta = "1234";
+
+            if(usuario === usuarioCorreto && senha === senhaCorreta){
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function ex9() {
+            var usuario = prompt("Digite o usuário:");
+            var senha = prompt("Digite a senha:");
+            if(login(usuario, senha)){
+                alert("Acesso permitido");
+            } else {
+                alert("Usuário ou senha incorretos");
+            }
+        }
+    </script>
+</body>
+</html>
