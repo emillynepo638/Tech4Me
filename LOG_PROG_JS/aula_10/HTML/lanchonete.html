@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Totem Simples</title>
+</head>
+<body>
+  <h1>Totem da Lanchonete</h1>
+
+  <label>Nome do sanduíche:</label>
+  <input id="sanduiche" type="text"><br><br>
+
+  <button id="iniciar">Iniciar pedido</button>
+
+  <div id="areaAcomp" style="display:none; margin-top:20px;">
+    <p>Digite até 5 acompanhamentos (R$ 2,00 cada).</p>
+    <p>Digite <strong>concluir</strong> para finalizar.</p>
+
+    <input id="acomp" type="text">
+    <button id="add">Adicionar</button>
+
+    <p id="contador">0 / 5</p>
+
+    <ul id="lista"></ul>
+  </div>
+
+  <div id="resultado" style="display:none; margin-top:20px;">
+    <h3>Resumo do pedido</h3>
+    <p id="resumo"></p>
+  </div>
+
+  <script src=""></script>
+</body>
+</html>
