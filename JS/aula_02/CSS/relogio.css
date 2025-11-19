@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #111827);
+  background-size: 400% 400%;
+  animation: fundoAnimado 12s ease infinite;
+  font-family: 'Courier New', monospace;
+}
+
+/* Relógio */
+#relogio {
+  color: #b700ff;
+  font-size: 90px;
+  letter-spacing: 6px;
+  padding: 25px 50px;
+  border-radius: 15px;
+  border: 3px solid #b700ff;
+  background: rgba(0, 0, 0, 0.35);
+
+  /* efeitos neon */
+  box-shadow:
+    0 0 10px #b700ff,
+    0 0 20px #b700ff,
+    0 0 40px #b700ff;
+
+  animation: neonPulse 2.5s ease-in-out infinite;
+}
+
+/* Animação do fundo */
+@keyframes fundoAnimado {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Animação do neon pulsando */
+@keyframes neonPulse {
+  0% {
+    box-shadow:
+      0 0 8px #b700ff,
+      0 0 16px #b700ff,
+      0 0 32px #b700ff;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 0 16px #b700ff,
+      0 0 30px #b700ff,
+      0 0 60px #b700ff;
+    transform: scale(1.03);
+  }
+  100% {
+    box-shadow:
+      0 0 8px #b700ff,
+      0 0 16px #b700ff,
+      0 0 32px #b700ff;
+    transform: scale(1);
+  }
+}

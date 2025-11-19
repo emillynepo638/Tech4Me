@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Contando quadrados azuis</title>
+  <style>
+    .quadrado {
+      width: 80px;
+      height: 80px;
+      margin: 5px;
+      display: inline-block;
+    }
+    .azul { background: blue; }
+    .vermelho { background: red; }
+  </style>
+</head>
+
+<body>
+  <!-- Algumas divs -->
+  <div class="quadrado azul"></div>
+  <div class="quadrado vermelho"></div>
+  <div class="quadrado azul"></div>
+  <div class="quadrado azul"></div>
+
+  <script>
+    const quadradosAzuis = document.querySelectorAll('.azul');
+    console.log("Quantidade de quadrados azuis:", quadradosAzuis.length);
+  </script>
+</body>
+
+</html>
