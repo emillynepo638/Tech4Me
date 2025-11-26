@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Remover Lista</title>
+</head>
+<body>
+
+<input id="item" type="text" placeholder="Novo item">
+<button onclick="adicionar()">Adicionar</button>
+<button onclick="remover()">Remover último</button>
+
+<ul id="lista"></ul>
+
+<script>
+function adicionar() {
+  const texto = document.getElementById("item").value;
+  const li = document.createElement("li");
+  li.innerText = texto;
+  document.getElementById("lista").appendChild(li);
+}
+
+function remover() {
+  const lista = document.getElementById("lista");
+  if (lista.lastChild) {
+    lista.lastChild.remove();
+  }
+}
+</script>
+
+</body>
+</html>

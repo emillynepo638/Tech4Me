@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Mostrar Nome</title>
+</head>
+<body>
+
+<h2>Mostrar Nome</h2>
+
+<input id="nome" type="text" placeholder="Digite seu nome">
+<button onclick="mostrar()">Mostrar</button>
+
+<p id="resultado"></p>
+
+<script>
+function mostrar() {
+  const nome = document.getElementById("nome").value;
+  document.getElementById("resultado").innerText = nome;
+}
+</script>
+
+</body>
+</html>

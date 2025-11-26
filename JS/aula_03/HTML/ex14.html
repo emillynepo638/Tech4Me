@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Temporizador</title>
+</head>
+<body>
+
+<h2>Temporizador</h2>
+
+<input id="segundos" type="number" placeholder="Segundos">
+<button onclick="iniciar()">Iniciar</button>
+
+<div id="tela" style="font-size: 30px; margin-top: 20px;"></div>
+
+<script>
+let timer;
+
+function iniciar() {
+  let tempo = Number(document.getElementById("segundos").value);
+  clearInterval(timer);
+
+  timer = setInterval(() => {
+    document.getElementById("tela").innerText = tempo;
+
+    if (tempo <= 0) {
+      clearInterval(timer);
+    }
+
+    tempo--;
+  }, 1000);
+}
+</script>
+
+</body>
+</html>

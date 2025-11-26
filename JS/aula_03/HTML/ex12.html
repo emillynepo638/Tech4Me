@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Formulário</title>
+</head>
+<body>
+
+<h2>Formulário</h2>
+
+<input id="nome" type="text" placeholder="Nome"><br>
+<input id="idade" type="number" placeholder="Idade"><br>
+<input id="email" type="email" placeholder="Email"><br>
+<button onclick="enviar()">Enviar</button>
+
+<div id="card"></div>
+
+<script>
+function enviar() {
+  const nome = document.getElementById("nome").value;
+  const idade = document.getElementById("idade").value;
+  const email = document.getElementById("email").value;
+
+  document.getElementById("card").innerHTML = `
+    <div style="
+      border:1px solid #000;
+      padding:10px;
+      width:200px;
+      margin-top:10px;
+    ">
+      <h3>Dados</h3>
+      <p><b>Nome:</b> ${nome}</p>
+      <p><b>Idade:</b> ${idade}</p>
+      <p><b>Email:</b> ${email}</p>
+    </div>
+  `;
+}
+</script>
+
+</body>
+</html>

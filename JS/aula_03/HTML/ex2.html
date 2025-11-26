@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Contador</title>
+</head>
+
+<body>
+<h2>Contador</h2>
+<h1 id="valor">0</h1>
+
+<button onclick="mais()">+1</button>
+<button onclick="menos()">-1</button>
+
+<script>
+let numero = 0;
+
+function mais() {
+  numero++;
+  document.getElementById("valor").innerText = numero;
+}
+
+function menos() {
+  numero--;
+  document.getElementById("valor").innerText = numero;
+}
+</script>
+
+</body>
+</html>

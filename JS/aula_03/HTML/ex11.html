@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Tarefas</title>
+</head>
+<body>
+
+<input id="tarefa" type="text" placeholder="Digite uma tarefa">
+<button onclick="add()">Adicionar</button>
+
+<ul id="lista"></ul>
+
+<script>
+function add() {
+  const texto = document.getElementById("tarefa").value;
+
+  const li = document.createElement("li");
+
+  const check = document.createElement("input");
+  check.type = "checkbox";
+  check.onchange = function () {
+    li.style.textDecoration = this.checked ? "line-through" : "none";
+  };
+
+  li.appendChild(check);
+  li.appendChild(document.createTextNode(" " + texto));
+
+  document.getElementById("lista").appendChild(li);
+}
+</script>
+
+</body>
+</html>

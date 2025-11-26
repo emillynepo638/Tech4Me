@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Modos</title>
+</head>
+<body>
+
+<button onclick="claro()">Modo Claro</button>
+<button onclick="escuro()">Modo Escuro</button>
+
+<h1 id="titulo">Bem-vindo!</h1>
+
+<script>
+function claro() {
+  document.body.style.background = "white";
+  document.body.style.color = "black";
+  document.body.style.fontFamily = "Arial";
+}
+
+function escuro() {
+  document.body.style.background = "#222";
+  document.body.style.color = "white";
+  document.body.style.fontFamily = "Verdana";
+}
+</script>
+
+</body>
+</html>

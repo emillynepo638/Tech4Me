@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora</title>
+</head>
+<body>
+
+<input id="n1" type="number">
+<input id="n2" type="number">
+
+<br><br>
+
+<button onclick="somar()">Somar</button>
+<button onclick="sub()">Subtrair</button>
+<button onclick="mult()">Multiplicar</button>
+<button onclick="dividir()">Dividir</button>
+
+<p id="res"></p>
+
+<script>
+function somar() {
+  const a = Number(document.getElementById("n1").value);
+  const b = Number(document.getElementById("n2").value);
+  document.getElementById("res").innerText = a + b;
+}
+function sub() {
+  const a = Number(document.getElementById("n1").value);
+  const b = Number(document.getElementById("n2").value);
+  document.getElementById("res").innerText = a - b;
+}
+function mult() {
+  const a = Number(document.getElementById("n1").value);
+  const b = Number(document.getElementById("n2").value);
+  document.getElementById("res").innerText = a * b;
+}
+function dividir() {
+  const a = Number(document.getElementById("n1").value);
+  const b = Number(document.getElementById("n2").value);
+  document.getElementById("res").innerText = b === 0 ? "Erro" : a / b;
+}
+</script>
+
+</body>
+</html>

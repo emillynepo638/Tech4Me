@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Exercícios</title>
+
+<style>
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #5f2eea, #a360ff, #f78aff);
+    background-size: 300% 300%;
+    animation: bgMove 12s ease infinite;
+    min-height: 100vh;
+    padding: 40px;
+    color: #fff;
+}
+
+@keyframes bgMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: rgba(255,255,255,0.10);
+    border-radius: 25px;
+    padding: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.20);
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* ⭐⭐⭐ Agora REALMENTE fixa 5 por linha */
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+/* Botões que agora se adaptam ao grid */
+button {
+    width: 100%;              /* <-- ISSO GARANTE 5 POR FILEIRA */
+    min-width: 140px;         /* Não ficam estreitos demais */
+    padding: 14px;
+    border: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    font-size: 15px;
+    border-radius: 12px;
+    transition: 0.25s ease;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.25);
+    text-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.20);
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: -80%;
+    left: -80%;
+    width: 260%;
+    height: 260%;
+    background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, transparent 60%);
+    transform: scale(0);
+    transition: 0.4s ease;
+}
+
+button:hover::before {
+    transform: scale(1);
+}
+
+button:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.30);
+    background: rgba(255,255,255,0.25);
+}
+
+iframe {
+    width: 100%;
+    height: 520px;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.85);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+    animation: fadeIn 0.8s ease forwards;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Lista de Exercícios</h1>
+
+<button onclick="abrir('/HTML/ex1.html')">Exercício 01</button>
+<button onclick="abrir('/HTML/ex2.html')">Exercício 02</button>
+<button onclick="abrir('/HTML/ex3.html')">Exercício 03</button>
+<button onclick="abrir('/HTML/ex4.html')">Exercício 04</button>
+<button onclick="abrir('/HTML/ex5.html')">Exercício 05</button>
+<button onclick="abrir('/HTML/ex6.html')">Exercício 06</button>
+<button onclick="abrir('/HTML/ex7.html')">Exercício 07</button>
+<button onclick="abrir('/HTML/ex8.html')">Exercício 08</button>
+<button onclick="abrir('/HTML/ex9.html')">Exercício 09</button>
+<button onclick="abrir('/HTML/ex10.html')">Exercício 10</button>
+<button onclick="abrir('/HTML/ex11.html')">Exercício 11</button>
+<button onclick="abrir('/HTML/ex12.html')">Exercício 12</button>
+<button onclick="abrir('/HTML/ex13.html')">Exercício 13</button>
+<button onclick="abrir('/HTML/ex14.html')">Exercício 14</button>
+<button onclick="abrir('/HTML/ex15.html')">Exercício 15</button>
+
+
+
+<iframe id="tela"></iframe>
+
+<script>
+function abrir(pagina) {
+  document.getElementById("tela").src = pagina;
+}
+</script>
+
+</body>
+</html>

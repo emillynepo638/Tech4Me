@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Mudar Cor</title>
+</head>
+<body>
+
+<p id="texto">Texto colorido</p>
+
+<button onclick="mudar('red')">Vermelho</button>
+<button onclick="mudar('blue')">Azul</button>
+<button onclick="mudar('green')">Verde</button>
+
+<script>
+function mudar(cor) {
+  document.getElementById("texto").style.color = cor;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Trocar Imagem</title>
+</head>
+<body>
+
+<img id="foto" src="img1.jpg" width="200">
+
+<br><br>
+
+<button onclick="trocar('/HTML/papainoel.jpg')">Imagem 1</button>
+<button onclick="trocar('/HTML/biscotonatal.jpg')">Imagem 2</button>
+
+<script>
+function trocar(caminho) {
+  document.getElementById("foto").src = caminho;
+}
+</script>
+
+</body>
+</html>

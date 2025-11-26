@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Contar Caracteres</title>
+</head>
+<body>
+
+<input id="texto" type="text" oninput="contar()">
+<p id="resultado">0 caracteres</p>
+
+<script>
+function contar() {
+  const t = document.getElementById("texto").value.length;
+  document.getElementById("resultado").innerText = t + " caracteres";
+}
+</script>
+
+</body>
+</html>
