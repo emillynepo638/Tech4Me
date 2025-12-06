@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #5f2eea, #a360ff, #f78aff);
+    background-size: 300% 300%;
+    animation: bgMove 12s ease infinite;
+    padding: 30px;
+    color: #fff;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #00000060;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffffdd;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #5f2eea;
+    color: white;
+    font-size: 15px;
+}
+
+tr:nth-child(even) {
+    background: #f0e7ff;
+}
+
+tr:hover {
+    background: #d7c4ff;
+}

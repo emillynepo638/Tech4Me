@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <button onclick="onClick()">evento click</button>
+
+    <p id="click"></p>
+
+    <!-- ************************************************* -->
+
+    <h1 id="demo" onmouseover="mouseCima()" onmouseout="mouseFora()">Passe o mouse</h1>
+
+    <!-- ************************************************* -->
+
+    Digite se nome<input type="text" id="frame" onfocus="onFocus()">
+
+    <!-- ************************************************* -->
+
+    <div>
+        <select id="mySelect" onchange="onChange()">
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Volvo">Volvo</option>
+        </select>
+    </div>
+
+    <p id="demo1"></p>
+
+    <script>
+        function onClick() {
+            document.getElementById("click").innerHTML = "Hello World";
+
+            // var id = document.getElementById("click")
+            // id.innerHTML = "Hello World"
+        }
+
+        function mouseCima() {
+            document.getElementById("demo").style.color = "red";
+        }
+
+        function mouseFora() {
+            document.getElementById("demo").style.color = "black";
+        }
+
+        function onFocus() {
+            document.getElementById("frame").style.backgroundColor = "red";
+        }
+
+        function onChange() {
+            var x = document.getElementById("mySelect").value;
+            document.getElementById("demo1").innerHTML = "Você selecionou: " + x
+        }
+    </script>
+</body>
+</html>
