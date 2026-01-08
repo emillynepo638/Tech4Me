@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Boas-vindas</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #5f2eea, #a360ff, #f78aff);
+      background-size: 300% 300%;
+      animation: bgMove 10s ease-in-out infinite;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: #ffffffdd;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 12px 25px rgba(0,0,0,.15);
+      text-align: center;
+      width: 340px;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      color: #4b2bb3;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #333;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1 id="titulo">Boas-vindas</h1>
+    <p id="mensagem"></p>
+  </div>
+
+  <script>
+    let nome = prompt("Digite seu nome:");
+
+    nome = nome || "";
+    nome = nome.trim();
+
+    const mensagem =
+      (nome !== "" && nome.length > 1)
+        ? `Bem vindo, ${nome}!`
+        : "Bem vindo, visitante!";
+
+    document.getElementById("mensagem").innerText = mensagem;
+  </script>
+
+</body>
+</html>
