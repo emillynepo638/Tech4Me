@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros Carros</title>
+</head>
+<body>
+    <div>
+        <div>
+            <label>Id do Carro</label>
+            <div>
+                <input type="text" class="input" id="id">
+            </div>
+        </div>
+        <div>
+            <label>Nome do Carro</label>
+            <div>
+                <input type="text" class="input" id="nome">
+            </div>
+        </div>
+        <div>
+            <label>Modelo do Carro</label>
+            <div>
+                <input type="text" class="input" id="modelo">
+            </div>
+        </div>
+        <div>
+            <label>Ano do Carro</label>
+            <div>
+                <input type="text" class="input" id="ano">
+            </div>
+        </div>
+        <div>
+            <label>Cor do Carro</label>
+            <div>
+                <input type="text" class="input" id="cor">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div>
+        <button id="enviar">Cadastrar</button>
+        <button id="editar">Editar</button>
+        <br>
+        <div>
+            <label>Qual o ID do carro a ser deletado?</label>
+            <input type="text" id="idCarro">
+            <button id="deletarCarros">Deletar</button>
+        </div>
+        <br>
+        <button id="getCarros">Listar Carros</button>
+    </div>
+
+    <div>
+        <ul id="listarCarros"></ul>
+    </div>
+
+    <script type="module" src="./carrosApi.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "carros": [
+    {
+      "nome": "Jeep",
+      "modelo": "Compass",
+      "cor": "Vermelho",
+      "ano": "2022",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "nome": "Jeep",
+      "modelo": "Renegade",
+      "cor": "Preto",
+      "ano": "2021"
+    },
+    {
+      "nome": "Fiat",
+      "modelo": "Uno",
+      "cor": "Cinza",
+      "ano": "2019",
+      "id": "3"
+    },
+    {
+      "nome": "Toyota",
+      "modelo": "Corolla",
+      "cor": "Preto",
+      "ano": "2012",
+      "id": "4"
+    },
+    {
+      "nome": {
+        "inputNome": "nome",
+        "inputModelo": "modelo",
+        "inputCor": "cor",
+        "inputAno": "ano"
+      },
+      "id": "5'"
+    }
+  ]
+}
