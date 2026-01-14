@@ -1,0 +1,25 @@
+{
+  "pokemon": [
+    {
+      "id": "1",
+      "nome": "Bulbasaur",
+      "tipo": "Planta/Veneno",
+      "nivel": "5",
+      "regiao": "kanto"
+    },
+    {
+      "id": "133",
+      "nome": "Eevee",
+      "tipo": "Normal",
+      "nivel": "5",
+      "regiao": "kanto"
+    },
+    {
+      "id": "6",
+      "nome": "Charizard",
+      "tipo": "Fogo/Voador",
+      "nivel": "36",
+      "regiao": "Kanto"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Missões</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Missões</h1>
+
+        <form id="form-missao">
+            <input type="text"
+            id="titulo"
+            placeholder="Digite uma nova missão"
+            required
+            >
+            <button type="submit">Adicionar</button>
+             
+        </form>
+
+        <div class="filtros">
+            <button id="todas">Todas as Missões</button>
+            <button id="pendentes">Missões Pendentes</button>
+            <button id="concluidas">Missões Concluidas</button>
+
+        </div>
+
+        <ul id="lista-missoes"></ul>
+    </div>
+
+    <script src="/JS/script.js"></script>
+</body>
+</html>

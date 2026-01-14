@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex</title>
+    <link rel="stylesheet" href="/CSS/pokemon.css">
+</head>
+<body>
+    <h2>PokeDex</h2>
+
+    <div class="bloco">
+        <input id="id" placeholder="ID do Pokémon">
+        <input id="nome" placeholder="Nome do Pokémon">
+        <input id="tipo" placeholder="Tipo do Pokémon">
+        <input id="nivel" placeholder="Nivel do Pokémon">
+        <input id="regiao" placeholder="Região do Pokémon">
+
+        <button id="enviar">Cadastrar</button>
+        <button id="editar">Editar</button>
+    </div>
+
+    <div class="bloco">
+        <input id="IdPokemon" placeholder="ID para deletar">
+        <button id="deletarPokemon">Deletar</button>
+    </div>
+
+    <div>
+        <button id="getPokemon">Listar Pokémon</button>
+        <ul id="listarPokemon"></ul>
+    </div>
+</body>
+
+<script type="module" src="/JS/pokemon.js"></script>
+
+</html>
