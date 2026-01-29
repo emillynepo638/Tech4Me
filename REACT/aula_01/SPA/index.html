@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>SPA Pessoal</title>
+
+  <!-- React via CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #b00000, #000000);
+  }
+
+  header {
+    background: linear-gradient(90deg, #000000, #b00000);
+    padding: 15px;
+    text-align: center;
+  }
+
+  header button {
+    background: #b00000;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin: 0 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+
+  header button:hover {
+    background: #000000;
+  }
+
+  #app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .card h2 {
+    margin-bottom: 10px;
+    color: #b00000;
+  }
+
+  .card p {
+    margin: 6px 0;
+  }
+</style>
+
+</head>
+<body>
+
+  <header>
+    <button id="btn-js">Conteúdo JavaScript</button>
+    <button id="btn-react">Conteúdo React</button>
+  </header>
+
+  <div id="app"></div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
