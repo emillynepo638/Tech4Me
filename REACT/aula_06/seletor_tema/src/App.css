@@ -1,0 +1,77 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Tema Claro */
+body.claro {
+  background: linear-gradient(135deg, #ffe6f0, #fff0f7);
+  color: #5a2a3c;
+  transition: all 0.4s ease;
+}
+
+/* Tema Escuro */
+body.escuro {
+  background: linear-gradient(135deg, #1f1b24, #2d2233);
+  color: #f8d9e6;
+  transition: all 0.4s ease;
+}
+
+/* Container principal */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+/* Título */
+.app h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* Texto */
+.app p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Seletor */
+.seletor-tema {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Botões */
+.seletor-tema button {
+  padding: 12px 22px;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #ffb6d5;
+  color: #5a2a3c;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.seletor-tema button:hover {
+  transform: translateY(-3px);
+  background: #ff9fc9;
+}
+
+/* Botão ativo */
+.seletor-tema button.ativo {
+  background: #ff6fae;
+  color: white;
+  transform: scale(1.05);
+}

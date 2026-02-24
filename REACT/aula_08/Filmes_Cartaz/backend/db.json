@@ -1,0 +1,74 @@
+{
+  "filmes": [
+    {
+      "id": 1,
+      "titulo": "As Branquelas",
+      "genero": "Comédia",
+      "nota": 9.3,
+      "poster": "https://br.web.img2.acsta.net/r_1280_720/medias/nmedia/18/35/41/47/18389293.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Crepúsculo",
+      "genero": "Romance / Fantasia",
+      "nota": 8.7,
+      "poster": "https://uauposters.com.br/media/catalog/product/1/5/153520140525-uau-posters-filmes-a-saga-crepusculo--the-twilight-saga-robert-pattinson-kirsten-stewert.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Velozes e Furiosos",
+      "genero": "Ação",
+      "nota": 9.0,
+      "poster": "https://img.elo7.com.br/product/zoom/268DD90/big-poster-velozes-e-furiosos-lo09-tamanho-90x60-cm-geek.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Interestelar",
+      "genero": "Ficção Científica",
+      "nota": 9.8,
+      "poster": "https://upload.wikimedia.org/wikipedia/pt/3/3a/Interstellar_Filme.png"
+    },
+    {
+      "id": 5,
+      "titulo": "Tropa de Elite",
+      "genero": "Ação / Drama",
+      "nota": 9.6,
+      "poster": "https://images.justwatch.com/poster/303450506/s718/tropa-de-elite.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "Alvin e os Esquilos",
+      "genero": "Animação / Comédia",
+      "nota": 8.5,
+      "poster": "https://img.elo7.com.br/product/zoom/42B389E/poster-6-alvin-e-os-esquilos-2009-mdf-3mm-28x40cm-show.jpg"
+    },
+    {
+      "id": 7,
+      "titulo": "Uma Segunda Chance para Amar",
+      "genero": "Romance / Drama",
+      "nota": 8.6,
+      "poster": "https://br.web.img3.acsta.net/r_1280_720/pictures/19/09/11/15/30/3279825.jpg"
+    },
+    {
+      "id": 8,
+      "titulo": "As Crônicas de Nárnia",
+      "genero": "Fantasia / Aventura",
+      "nota": 9.1,
+      "poster": "https://http2.mlstatic.com/D_NQ_NP_993734-MLA95208387335_102025-F.jpg"
+    },
+    {
+      "id": 9,
+      "titulo": "A Paixão de Cristo",
+      "genero": "Drama",
+      "nota": 9.4,
+      "poster": "https://br.web.img3.acsta.net/medias/nmedia/18/90/65/02/20106873.jpg"
+    },
+    {
+      "id": 10,
+      "titulo": "Vingadores: Ultimato",
+      "genero": "Ação / Super-herói",
+      "nota": 9.9,
+      "poster": "https://ingresso-a.akamaihd.net/prd/img/movie/vingadores-ultimato-relancamento/2f841b02-cb92-4168-8e1e-36ad3313662a.webp"
+    }
+  ]
+}
