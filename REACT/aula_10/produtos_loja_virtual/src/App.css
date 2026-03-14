@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #fff0f5);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #c2185b;
+  margin-bottom: 30px;
+}
+
+.lista-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-produto {
+  width: 300px;
+  background: white;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(216, 27, 96, 0.12);
+  border: 2px solid #f8bbd0;
+}
+
+.card-produto h2 {
+  color: #ad1457;
+  margin-bottom: 12px;
+}
+
+.preco,
+.estoque {
+  color: #6d4c5b;
+  margin-bottom: 8px;
+}
+
+.area-compra {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.area-compra label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #7a4b5d;
+  font-weight: bold;
+}
+
+.area-compra input {
+  padding: 10px 12px;
+  border: 2px solid #f8bbd0;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.area-compra input:focus {
+  border-color: #ec407a;
+}
+
+.area-compra button {
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ec407a, #d81b60);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.area-compra button:hover:enabled {
+  transform: translateY(-2px);
+}
+
+.area-compra button:disabled {
+  background: #d8b7c3;
+  cursor: not-allowed;
+}
+
+.mensagem-erro {
+  margin-top: 14px;
+  color: #d32f2f;
+  font-weight: bold;
+  font-size: 0.95rem;
+}

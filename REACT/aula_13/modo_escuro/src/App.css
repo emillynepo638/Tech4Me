@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  width: 90%;
+  max-width: 420px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: 0.4s;
+}
+
+.card h1 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.card p {
+  margin-bottom: 25px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Modo claro */
+.claro {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  color: #222;
+}
+
+.claro .card {
+  background-color: white;
+}
+
+.claro button {
+  background-color: #222;
+  color: white;
+}
+
+/* Modo escuro */
+.escuro {
+  background: linear-gradient(135deg, #1f1f1f, #121212);
+  color: #f5f5f5;
+}
+
+.escuro .card {
+  background-color: #2b2b2b;
+}
+
+.escuro button {
+  background-color: #f5f5f5;
+  color: #111;
+}

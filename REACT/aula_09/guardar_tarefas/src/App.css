@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #ffd6e7, #fff0f5);
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 12px 30px rgba(214, 51, 108, 0.18);
+}
+
+h1 {
+  text-align: center;
+  color: #c2185b;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #8a5a6d;
+  margin-bottom: 25px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #d81b60;
+  font-weight: bold;
+}
+
+.lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.item {
+  background: #fff0f6;
+  border: 2px solid #f8bbd0;
+  border-radius: 16px;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.item span {
+  color: #6d3a4f;
+  flex: 1;
+}
+
+.item strong {
+  color: #ad1457;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
